@@ -24,8 +24,8 @@
         "no-console": "off",
         "prefer-arrow-callback": "error",
         "arrow-spacing": [
-          "error",
-          { "before": true, "after": true }
-        ]
+          "error"
+        ],
+        "no-var": "error"
     }
 }
