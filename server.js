@@ -6,7 +6,7 @@ const app = express();
 const json = require('body-parser').json;
 const dbUrl = 'mongodb://localhost:27017/books';
 
-app.post('/example2', json(), (req, res) => {
+app.post('/book', json(), (req, res) => {
   MongoClient.connect(dbUrl)
     .then((db) => insertBook(db, req.body))
     .then((result) => res.status(200).send(result))
